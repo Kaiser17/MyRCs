@@ -13,49 +13,31 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-
 set lbr
 set tw=500
-
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap Lines
-
 set history=700
-
 set autoread
-
 set wildmenu
-
 set ruler
-
 set cmdheight=2
-
 set backspace=indent,eol,start
 set whichwrap+=h,l
-
 set ignorecase
-
 set smartcase
-
 set hlsearch
-
 set incsearch
-
 set showmatch
 set mat=2
-
 set noerrorbells
 set novisualbell
 set noeb vb t_vb=
 set tm=500
-
 set background=dark
-
 set nu
-
 set cul
-
 set scrolloff=5
 set sidescrolloff=10
 
