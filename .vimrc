@@ -1,23 +1,28 @@
 set nocompatible
 filetype off
+syntax on 
 
 filetype indent on
 filetype plugin on
-syntax on 
+syntax enable
 
 :nmap <S-Space> <Esc>
+:imap jj <Esc>
 :imap ii <Esc>
-imap <tab> <c-r>=Smart_TabComplete()<CR>
 
+set spell
+set ic
+set textwidth=60
+set fo+=t
+set fo-=l
+set tw=0
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
 set lbr
-set tw=500
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap Lines
 set history=700
 set autoread
 set wildmenu
@@ -40,6 +45,12 @@ set nu
 set cul
 set scrolloff=5
 set sidescrolloff=10
+
+let g:tex_flavor='latex'
+
+if match($TERM, "screen")!=1
+    set term=xterm
+endif
 
 function! Smart_TabComplete()
  let line = getline('.')                         " current line
